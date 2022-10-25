@@ -73,6 +73,7 @@ select {
     --color-yellow: #FDCB6E;    
     --color-yellow-light: #FFEAA7;
     --color-gray: #858585;
+    --color-gray-dark: rgba(92, 92, 92, 1);
     --color-black: #2D3436;
     --color-red: rgba(214, 48, 49, 1);
     --color-green: #55EFC4;
@@ -194,4 +195,10 @@ p{
 
 .uk-card__main{
   border-radius: 20px;
+}
+
+.uk-rounded-arrow{
+  background-color: rgb(252,248,234);
+  padding: 9.6px 9.6px 0 9.6px;
+  border-radius: 999px;
 }
