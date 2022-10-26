@@ -57,7 +57,21 @@
     }
 }
 
-@media all   and (max-width:360px) {
+@media screen and (max-width:480px) {
+    /* UIKIT */
+    .p-small{
+        font-size: 9px;
+    }
+      
+    .p-bold{
+        font-size: 10px;
+    }  
+    .p-big{
+        font-size: 14px;
+    }
+    .uk-card__main{
+        border-radius: 10px;
+    }
     .mobile{
         display: block;
     }
@@ -144,4 +158,4 @@
         letter-spacing: 0.25px;
         margin-bottom: 14px;
     }
-}   
+}

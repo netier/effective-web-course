@@ -118,6 +118,24 @@ p{
     letter-spacing: -0.25px;
 }
 
+.p-small{
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
+.p-bold{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}  
+
+.p-big{
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+}
+
 .purple{ color: var(--color-purple); }
 .yellow{ color: var(--color-yellow); }
 .gray{ color: var(--color-gray); }
@@ -195,6 +213,8 @@ p{
 
 .uk-card__main{
   border-radius: 20px;
+  overflow: hidden;
+  /* background-color: var(--color-yellow); */
 }
 
 .uk-rounded-arrow{
