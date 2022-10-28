@@ -42,6 +42,18 @@ a:not([class]) {
   text-decoration-skip-ink: auto;
 }
 
+a{
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration:underline;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -56,6 +68,33 @@ button,
 textarea,
 select {
   font: inherit;
+}
+
+input,
+textarea{
+  background-color: rgba(194, 194, 194, 0.24);
+  font-size: 18px;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 16px;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+textarea{
+  padding: 16px;
+  color: var(--color-purple);
+  border: 1px solid var(--color-purple);
+  font-weight: 700;
+}
+
+textarea::placeholder{
+  color: var(--color-purple);
+}
+
+input::placeholder{
+  color: #000;
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -73,10 +112,15 @@ select {
     --color-yellow: #FDCB6E;    
     --color-yellow-light: #FFEAA7;
     --color-gray: #858585;
+    --color-gray-light: #ADADAD;
     --color-gray-dark: rgba(92, 92, 92, 1);
+    --color-gray-soft: rgba(194, 194, 194, 0.5);
     --color-black: #2D3436;
     --color-red: rgba(214, 48, 49, 1);
     --color-green: #55EFC4;
+    --color-green_dark: #00B894;
+    --color-pink: #E84393;
+    --color-blue: #0984E3;
     --color-white: #fff;
 }
 
@@ -118,6 +162,12 @@ p{
     letter-spacing: -0.25px;
 }
 
+.p-mobile{
+  font-size: 12px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+}
+
 .p-small{
   font-size: 14px;
   font-weight: 400;
@@ -130,7 +180,31 @@ p{
   letter-spacing: 0.2px;
 }  
 
-.p-big{
+.p-big_desktop{
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: -0.25px;
+}
+
+.p-small_desktop{
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.25px;
+}
+
+.p-medium_desktop{
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+}
+
+.p-bold_desktop{
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+}  
+
+.p-big_desktop{
   font-size: 24px;
   font-weight: 400;
   letter-spacing: -0.25px;
@@ -142,6 +216,7 @@ p{
 .uk-color_black{ color:var(--color-black); }
 .uk-color_red{ color: var(--color-red); }
 .uk-color_green{ color: var(--color-green); }
+.uk-color_green_dark{ color: var(--color-green_dark); }
 .uk-color_white{ color: var(--color-white); }
 
 .size-32px{ font-size: 32px; }
@@ -164,7 +239,7 @@ p{
 /* BUTTONS */
 
 .uk-button-primary{
-  cursor: pointer;
+    cursor: pointer;
     border: none;
     outline: none;
     border-radius: 16px;
@@ -173,12 +248,12 @@ p{
     color: #fff;
     font-size: 24px;
     font-weight: 700;
-    transition: .3s;
+    transition: background-color .3s, color .3s;
 }
 
 .uk-button-primary:hover{
   background-color: var(--color-black);
-  transition: .3s;
+  transition: background-color .3s, color .3s;
 }
 
 .uk-button-primary-rounded{
@@ -191,24 +266,45 @@ p{
     color: #fff;
     font-size: 24px;
     font-weight: 700;
-    transition: .3s;
+    transition: background-color .3s, color .3s;
 }
 
 .uk-button-primary-rounded:hover{
   background-color: var(--color-black);
-  transition: .3s;
+  transition: background-color .3s, color .3s;
 }
 
 .uk-button-ghost{
   cursor: pointer;
-    border: none;
-    outline: none;
-    border-radius: 16px;
-    padding: 8px 16px;
-    background-color: rgba(0,0,0,0);  
-    color: rgba(0,0,0,0); 
-    font-size: 24px;
-    font-weight: 700; 
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+  background-color: rgba(0,0,0,0);  
+  color: rgba(0,0,0,0); 
+  font-size: 24px;
+  font-weight: 700; 
+}
+
+.uk-button-ghost_border{
+  cursor: pointer;
+  border: none;
+  outline: none;
+  border-radius: 16px;
+  padding: 8px 16px;
+  background-color: transparent;  
+  color: var(--color-purple); 
+  font-size: 18px;
+  font-weight: 700; 
+  border: 1px solid rgba(173, 173, 173, 1);
+  transition: background-color .3s, color .3s;
+}
+
+.uk-button-ghost_border:hover{
+  background-color: var(--color-purple);
+  color: #fff;
+  border: 1px solid var(--color-purple);
+  transition: background-color .3s, color .3s;
 }
 
 .uk-card__main{

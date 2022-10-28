@@ -105,6 +105,10 @@
         box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.08);
     }
         /* HERO */
+    .hero{
+        padding: 48px 0 48px 0;
+        row-gap: 0px;
+    }
 
     /* >>HERO_BACKGROUND */
     .background__box{
@@ -128,7 +132,7 @@
     }
     /* >>HERO__TITLE */
     .hero__title{
-        margin: 48px 0 8px 0;
+        margin-bottom: 0;
     }
     .title__large{
         grid-template-columns: repeat(2,auto);
@@ -157,5 +161,198 @@
         font-weight: 700;
         letter-spacing: 0.25px;
         margin-bottom: 14px;
+    }
+
+    /* WRAPPER */
+
+    .wrapper{
+        margin-top: 30px;
+    }
+
+    /* >>BLOCKS */
+
+    .block{
+        padding: 40px 15px;
+    }
+
+    .block__title h4{
+        font-size: 24px;
+        flex-wrap: wrap;
+    }
+    .block__title p{
+        font-size: 18px;
+    }
+
+    /* >>BLOCK_1 */
+
+    .capabilities{
+        grid-template-columns: repeat(2,150px);
+        row-gap: 40px;
+    }
+
+    .capabilities .item{
+        display: grid;
+        grid-template-columns: 53px 56.5px 40.5px;
+        grid-template-rows: 53px auto auto 36px;
+        row-gap: 15px;
+    }
+    
+    .capabilities .item p:nth-child(3){
+        font-size: 14px;
+    }
+
+    .capabilities .item .item__svg{
+        border-radius: 12px;
+        padding: 6px;
+        margin-bottom: 0px;
+    }
+
+    .capabilities .item button{
+        grid-row: 4;
+        font-size: 13px;
+        line-height: 12px;
+        border-radius: 12px;
+    }
+
+    /* BLOCK_2 */
+
+    /* PRICING__TITIE */
+    
+    .pricing__title{
+        text-align: left;
+        row-gap: 8px;
+    }
+
+    .pricing__title h2{
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+    }
+
+    .pricing__title h4{
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: -0.25px;
+    }
+
+    .title__h4{
+        justify-content: flex-start;
+    }
+
+    .h4__box h4{
+        color: var(--color-black);
+    }
+
+    .h4__box .box{
+        margin-top: -15px;
+    }
+
+    /* >>PRICING__ITEMS */
+
+    .pricing__items{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3,auto);
+        row-gap: 24px;
+    }
+    .pricing__items .item{
+        grid-template-rows: 32px 20px auto 48px;
+        box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.08);
+    }
+
+    .pricing__items .item p:first-child{
+        color: var(--color-black);
+    }
+
+    .item__price h3{
+        color: var(--color-purple);
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .item__price p{
+        color: var(--color-purple);
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 43px;
+    }
+
+    .pricing__items .item:not(.item:nth-child(2)) button{
+        background-color: var(--color-purple);
+        color: var(--color-white);
+        transition: background-color .3s, color .3s;
+    }
+
+    .pricing__items .item:not(.item:nth-child(2)) button:hover{
+        background-color: var(--color-black);
+        transition: background-color .3s, color .3s;
+    }
+
+    .pricing__items .item .components p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .components .component .checkmark{
+        background-color: var(--color-yellow);
+        width: 24px;
+        height: 24px;
+    }
+
+    .components .component .checkmark svg{
+        width: 20px;
+        margin: 0 2.5px;
+    }
+    
+    .pricing__items .item:nth-child(2){
+        grid-row-start: 3;
+        background-color: var(--color-purple);
+        box-shadow: none;
+    }
+
+    .pricing__items .item:nth-child(2) .item__title p{
+        color: var(--color-green);
+    }
+
+    .pricing__items .item:nth-child(2) .item__price h3,
+    .pricing__items .item:nth-child(2) .item__price p{
+        text-shadow: 0px 4px 0px rgba(0, 0, 0, 1);
+        color: var(--color-white);
+    }
+
+    .pricing__items .item:nth-child(2) .components .component .checkmark{
+        background-color: var(--color-black);
+    }
+
+    .pricing__items .item:nth-child(2) .components .component .checkmark svg{
+        stroke: var(--color-white);
+    }
+
+    .pricing__items .item:nth-child(2) .components .component p{
+        color: var(--color-white)
+    }
+
+    .pricing__items .item:nth-child(2) button{
+        background-color: var(--color-white);
+        font-size: 18px;
+        color: var(--color-black);
+        box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.16);
+        transition: background-color .3s, color .3s;
+    }
+
+    .pricing__items .item:nth-child(2) button:hover{
+        background-color: var(--color-black);
+        color: var(--color-white);
+        transition: background-color .3s, color .3s;
+    }
+
+    /* FOOTER */
+
+    footer{
+        background: none;
+        padding: 60px 0 0px 0;
+    }
+
+    footer .container{
+        display: block;
     }
 }
