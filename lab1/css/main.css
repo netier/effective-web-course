@@ -44,6 +44,10 @@
     align-items: stretch;
 }
 
+.navbar__logo:hover{
+    text-decoration: none;
+}
+
 .logo__menus{
     display: none;
 }
@@ -295,6 +299,10 @@
     margin-bottom: auto;
 }
 
+.card-desktop__left .uk-card__main:first-child{
+    border-radius: 0px;
+}
+
 .card-desktop__left .uk-card__main:nth-child(2){
     height: 464px;
     background: url(images/01.png) no-repeat;
@@ -349,6 +357,7 @@
     grid-row: 1;
     display: flex;
     align-items:flex-end;
+    border-radius: 0px;
 }
 
 .card-desktop__right .uk-card__main:nth-child(3){
@@ -527,10 +536,28 @@
 
 .item__title{
     display: flex;
+    justify-content: space-between;
 }
 
-.item__title p:last-child{
-    line-height: 43px;
+.item__title *:first-child{
+    display: flex;
+}
+
+.item__title *:first-child p:last-child{
+    color: var(--color-purple);
+    line-height: 42px;
+}
+
+.item__title div:last-child{
+    align-self: flex-end;
+    padding: 8px 16px;
+    border: 1px solid var(--color-purple);
+    border-radius: 99px;
+    line-height: 12px;
+}
+
+.item__title *:last-child p{
+    color: var(--color-black);
 }
 
 .pricing__items .item .components{
@@ -559,14 +586,6 @@
 
 .checkmark svg{
     margin: 4px;
-}
-
-.pricing__items .item p:nth-child(1){
-    color: var(--color-purple);
-}
-
-.pricing__items .item .components p{
-    color: #000;
 }
 
 .item__price{
@@ -674,6 +693,7 @@ footer .background-mobile *:nth-last-child(2){
 }
 
 .info__icons .icon{
+    cursor: pointer;
     width: 40px;
     height: 40px;
     border-radius: 999px;

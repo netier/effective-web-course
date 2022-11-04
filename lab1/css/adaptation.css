@@ -259,8 +259,20 @@
         box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.08);
     }
 
+    .item__title div:last-child{
+        border-color: var(--color-gray);
+    }
+
     .pricing__items .item p:first-child{
         color: var(--color-black);
+    }
+
+    .item__title div:first-child p:first-child{
+        display: none;
+    }
+
+    .item__title *:first-child p:last-child{
+        line-height: 32px;
     }
 
     .item__price h3{
@@ -307,6 +319,10 @@
         grid-row-start: 3;
         background-color: var(--color-purple);
         box-shadow: none;
+    }
+
+    .pricing__items .item:nth-child(2) .item__title div:last-child{
+        border-color: var(--color-green);
     }
 
     .pricing__items .item:nth-child(2) .item__title p{
