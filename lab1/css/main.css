@@ -152,6 +152,9 @@
     margin-top: -62px;
 }
 
+/* HERO */
+
+
 
 /* >>HERO__CARD */
 
@@ -173,7 +176,7 @@
 .cards-mobile__grid{
     position: relative;
     display: grid;
-    grid-template-columns: 33px 82px 130px 79px 48px 21px;
+    grid-template-columns: 33px 82px 130px 79px 48px 21px 35px;
     grid-template-rows: 42px 4px 107px 82px 39px 31px 37px 26px;
     row-gap: 15px;
     column-gap: 15px;
@@ -271,7 +274,7 @@
     line-height: 26px;
 }
 
-.hero__cards-mobile .uk-button-primary-rounded{
+.hero__cards-mobile *:last-child{
     grid-column: 4 / 6;
     grid-row: 7 / 8;
     box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.08);
@@ -389,6 +392,8 @@
     background: url(images/07.png) no-repeat;
 }
 
+/* WRAPPER */
+
 /* >>BLOCKS */
 
 .blocks{
@@ -408,7 +413,6 @@
 
 .block__title h4{
     display: flex;
-    column-gap: 5px;
 }
 
 /* >>BLOCK_1 */

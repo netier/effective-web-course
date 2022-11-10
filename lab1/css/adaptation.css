@@ -57,7 +57,7 @@
     }
 }
 
-@media screen and (max-width:496px) {
+@media screen and (max-width:480px) {
     /* UIKIT */
     .p-small{
         font-size: 9px;
@@ -186,7 +186,7 @@
     /* >>BLOCK_1 */
 
     .capabilities{
-        grid-template-columns: repeat(2,auto);
+        grid-template-columns: repeat(2,150px);
         row-gap: 40px;
     }
 
@@ -220,8 +220,6 @@
     
     .pricing__title{
         text-align: left;
-        text-align: center;
-        justify-content: center;
         row-gap: 8px;
     }
 
