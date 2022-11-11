@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="form" >
+        <h1>Timer</h1>
+        <p 
+            class="timer__error" 
+            id="timer__error" 
+        ></p>
+        <div class="form__control">
+            <button class="button__gray" onclick="changeTime(60)" >1 минута</button>
+            <button class="button__gray" onclick="changeTime(300)" >5 минут</button>
+            <button class="button__gray" onclick="changeTime(600)" >10 минут</button>
+        </div>
+        <div class="form__timer">
+            <input 
+                id="timer__minuts"
+                type="number" 
+                value="00"
+                oninput="InputChangeHandler(this)" 
+                onblur="InputBlurHandler(this)"
+                onfocus="InputFocusHandler(this)"
+                maxlength="2"
+            >
+            <span>:</span>
+            <input 
+                id="timer__seconds"
+                type="number" 
+                value="00"
+                oninput="InputChangeHandler(this)" 
+                onblur="InputBlurHandler(this)"
+                onfocus="InputFocusHandler(this)"
+                maxlength="2"
+            >
+        </div>
+        <p></p>
+        <div class="form__control">
+            <button 
+                class="button__background__green" 
+                onclick="timerStart()"
+            >Старт</button>
+            <button 
+                onclick="timerStop()"
+                class="button__background__red" 
+            >Стоп</button>
+            <button
+                onclick="timerRestart()"
+            >Рестарт</button>
+        </div>
+    </div>
+</body>
+</html>
