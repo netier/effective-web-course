@@ -1,0 +1,375 @@
+@media all and (max-width:1024px) {
+    /* NAVBAR */
+    .navbar .container{
+        grid-template-columns: auto 170px;
+    }
+    .logo__image{
+        display: none;
+    }
+    .logo__menus{
+        margin-top: 4px;
+        display: block;
+    }
+    .navbar__menu{
+        display: none;
+    }
+            /* HERO */
+
+    /* >>HERO_BACKGROUND */
+    .background__box{
+        width: 917px;
+        height: 611px;
+        right: -300px;
+        top: -300px;
+    }
+    .box__dots{
+        left: 430px;
+        transform: rotate(0deg);
+        row-gap: 10px;
+        column-gap: 10px;
+    }
+    .dot{
+        width: 10px;
+        height: 10px;
+    }
+    /* >>HERO__TITLE */
+    .title__large{
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+    }
+    .title__large h1:first-child{
+        grid-column-start: 1;
+        grid-column-end: 3;
+
+    }
+    .title__large h1{
+        font-size: 48px;
+        font-weight: 700;
+    }
+    .title__small{
+        font-size: 32px;
+        font-weight: 700;
+    }
+    .large__bottombox{
+        width: 119px;
+        height: 32px;
+        margin-top: -30px;
+    }
+}
+
+@media screen and (max-width:496px) {
+    /* UIKIT */
+    .p-small{
+        font-size: 9px;
+    }
+      
+    .p-bold{
+        font-size: 10px;
+    }  
+    .p-big{
+        font-size: 14px;
+    }
+    .uk-card__main{
+        border-radius: 10px;
+    }
+    .mobile{
+        display: block;
+    }
+    .desktop{
+        display: none;
+    }
+        /* NAVBAR */
+    .navbar{
+        height: 72px;
+    }
+    .navbar .container{
+        grid-template-columns: auto 128px;
+    }
+    .navbar__logo h3{
+        color: var(--color-gray-dark);
+        font-size: 24px;
+        line-height: 40px;
+    }
+    .logo__menus{
+        width: 40px;
+        height: 40px;
+        margin-top: 0px;
+    }
+    .navbar__menu-button{
+        display: block;
+    }
+    .navbar__button{
+        border-radius: 8px;
+        height: 40px;
+        font-size: 18px;
+        box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.08);
+    }
+        /* HERO */
+    .hero{
+        padding: 48px 0 48px 0;
+        row-gap: 0px;
+    }
+
+    /* >>HERO_BACKGROUND */
+    .background__box{
+        width: 757.27px;
+        height: 422.6px;
+        border-radius: 54.48px;
+        background-color: rgba(253, 203, 110, 0.4);
+        top: -225.08px;
+        right: -493.72px;
+    }
+    .box__dots{
+        left: 32%;
+        top: 54.5%;
+        transform: translate(-50%,-50%);
+        row-gap: 9.5px;
+        column-gap: 9.5px;
+    }
+    .dot{
+        width: 9.15px;
+        height: 9.15px;
+    }
+    /* >>HERO__TITLE */
+    .hero__title{
+        margin-bottom: 0;
+    }
+    .title__large{
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: repeat(2,auto);
+        margin-bottom: 20px;
+    }
+    .title__large h1:first-child{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        font-size: 64px;
+        font-weight: 900;
+        letter-spacing: -1px;
+    }
+    .title__large h1:nth-child(n+2){
+        font-size: 48px;
+        font-weight: 700;
+        letter-spacing: -1px;
+    }
+    .large__bottombox{
+        width: 119px;
+        height: 32px;
+        margin-top: -30px;
+    }
+    .title__small{
+        font-size: 24px;
+        font-weight: 700;
+        letter-spacing: 0.25px;
+        margin-bottom: 14px;
+    }
+
+    /* WRAPPER */
+
+    .wrapper{
+        margin-top: 30px;
+    }
+
+    /* >>BLOCKS */
+
+    .block{
+        padding: 40px 15px;
+    }
+
+    .block__title h4{
+        font-size: 24px;
+        flex-wrap: wrap;
+    }
+    .block__title p{
+        font-size: 18px;
+    }
+
+    /* >>BLOCK_1 */
+
+    .capabilities{
+        margin: auto;
+        grid-template-columns: repeat(2,150px);
+        row-gap: 40px;
+    }
+
+    .capabilities .item{
+        display: grid;
+        grid-template-columns: 53px 56.5px 40.5px;
+        grid-template-rows: 53px auto auto 36px;
+        row-gap: 15px;
+    }
+    
+    .capabilities .item p:nth-child(3){
+        font-size: 14px;
+    }
+
+    .capabilities .item .item__svg{
+        border-radius: 12px;
+        padding: 6px;
+        margin-bottom: 0px;
+    }
+
+    .capabilities .item button{
+        grid-row: 4;
+        font-size: 13px;
+        line-height: 12px;
+        border-radius: 12px;
+    }
+
+    /* BLOCK_2 */
+
+    /* PRICING__TITIE */
+    
+    .pricing__title{
+        text-align: left;
+        row-gap: 8px;
+    }
+
+    .pricing__title h2{
+        font-size: 32px;
+        font-weight: 700;
+        letter-spacing: -0.5px;
+    }
+
+    .pricing__title h4{
+        font-size: 24px;
+        font-weight: 400;
+        letter-spacing: -0.25px;
+    }
+
+    .title__h4{
+        justify-content: flex-start;
+    }
+
+    .h4__box h4{
+        color: var(--color-black);
+    }
+
+    .h4__box .box{
+        margin-top: -15px;
+    }
+
+    /* >>PRICING__ITEMS */
+
+    .pricing__items{
+        grid-template-columns: auto;
+        grid-template-rows: repeat(3,auto);
+        row-gap: 24px;
+    }
+    .pricing__items .item{
+        grid-template-rows: 32px 20px auto 48px;
+        box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.08);
+    }
+
+    .item__title div:last-child{
+        border-color: var(--color-gray);
+    }
+
+    .pricing__items .item p:first-child{
+        color: var(--color-black);
+    }
+
+    .item__title div:first-child p:first-child{
+        display: none;
+    }
+
+    .item__title *:first-child p:last-child{
+        line-height: 32px;
+    }
+
+    .item__price h3{
+        color: var(--color-purple);
+        font-size: 24px;
+        font-weight: 800;
+    }
+
+    .item__price p{
+        color: var(--color-purple);
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 43px;
+    }
+
+    .pricing__items .item:not(.item:nth-child(2)) button{
+        background-color: var(--color-purple);
+        color: var(--color-white);
+        transition: background-color .3s, color .3s;
+    }
+
+    .pricing__items .item:not(.item:nth-child(2)) button:hover{
+        background-color: var(--color-black);
+        transition: background-color .3s, color .3s;
+    }
+
+    .pricing__items .item .components p{
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    .components .component .checkmark{
+        background-color: var(--color-yellow);
+        width: 24px;
+        height: 24px;
+    }
+
+    .components .component .checkmark svg{
+        width: 20px;
+        margin: 0 2.5px;
+    }
+    
+    .pricing__items .item:nth-child(2){
+        grid-row-start: 3;
+        background-color: var(--color-purple);
+        box-shadow: none;
+    }
+
+    .pricing__items .item:nth-child(2) .item__title div:last-child{
+        border-color: var(--color-green);
+    }
+
+    .pricing__items .item:nth-child(2) .item__title p{
+        color: var(--color-green);
+    }
+
+    .pricing__items .item:nth-child(2) .item__price h3,
+    .pricing__items .item:nth-child(2) .item__price p{
+        text-shadow: 0px 4px 0px rgba(0, 0, 0, 1);
+        color: var(--color-white);
+    }
+
+    .pricing__items .item:nth-child(2) .components .component .checkmark{
+        background-color: var(--color-black);
+    }
+
+    .pricing__items .item:nth-child(2) .components .component .checkmark svg{
+        stroke: var(--color-white);
+    }
+
+    .pricing__items .item:nth-child(2) .components .component p{
+        color: var(--color-white)
+    }
+
+    .pricing__items .item:nth-child(2) button{
+        background-color: var(--color-white);
+        font-size: 18px;
+        color: var(--color-black);
+        box-shadow: 0px 4px 8px 0px rgba(38, 50, 56, 0.16);
+        transition: background-color .3s, color .3s;
+    }
+
+    .pricing__items .item:nth-child(2) button:hover{
+        background-color: var(--color-black);
+        color: var(--color-white);
+        transition: background-color .3s, color .3s;
+    }
+
+    /* FOOTER */
+
+    footer{
+        background: none;
+        padding: 60px 0 0px 0;
+    }
+
+    footer .container{
+        display: block;
+    }
+}
